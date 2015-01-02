@@ -17,13 +17,14 @@ if (!('Notification' in window)) {
       options = {
         body: 'You have a total of 3 unread emails',
         tag: 'preset',
-        icon: 'https://slack.global.ssl.fastly.net/21506/img/icons/ios-96.png'
+        icon: 'images/mail.png'
       };
     } else {
       title = document.getElementById('title').value;
       options = {
         body: document.getElementById('body').value,
-        tag: 'custom'
+        tag: 'custom',
+        icon: 'images/mail.png'
       };
     }
 
